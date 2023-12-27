@@ -1,0 +1,61 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up a mobile-friendly viewport */
+@media only screen and (max-width: 600px) {
+    .sticker-tracker .sticker-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sticker-cell {
+        width: 48%; /* Adjust as needed */
+        margin: 1%; /* Adjust as needed */
+    }
+}
+
+/* Styles for the stickers tracker */
+.sticker-tracker {
+    text-align: center;
+    margin: 20px;
+}
+
+.sticker-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sticker-cell {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.missing {
+    background-color: #ff9999; /* Light red for missing stickers */
+}
+
+.double {
+    background-color: #99ff99; /* Light green for double stickers */
+}
+
+.sticker-number {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Styles for the edit page */
+.sticker-edit-page {
+    margin: 20px;
+}
+
+/* Adjust styles as needed for mobile responsiveness */
